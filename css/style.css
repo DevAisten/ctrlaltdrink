@@ -204,7 +204,7 @@ form textarea {
     height: 200px;
 }
 
-.btn-contato {
+form .btn-contato input{
     width: 120px;
     height: 60px;
     padding: 10px; /* Ajusta o padding */
