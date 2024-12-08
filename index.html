@@ -59,7 +59,7 @@
 
         <section id="contato">
             <h1 class="titulo">CONTATO</h1>
-                <form action="https://devaisten.github.io/ctrlaltdrink/" method="post" >
+                <form action="#" method="post" id="form-contato">
                     <input type="text" name="nome" id="" placeholder="Nome:">
                     <input type="text" name="email" id="" placeholder="Email:">
                     <textarea placeholder="Sua mensagem:"></textarea>
@@ -74,7 +74,16 @@
         <p>&copy;CtrlAltDrink Pub. Todos os direitos reservados.</p>
     </footer>
 
+<script>
+    const form = document.getElementById('form-contato');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Impede o envio normal do formulário
+        alert('Formulário enviado!'); // Exemplo de ação após o envio
 
+        // Limpa os campos do formulário
+        form.reset();
+    });
+</script>
 
 </body>
 </html>
